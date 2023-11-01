@@ -11,9 +11,8 @@ function onFormElemSubmit(event) {
 
     if (email === '' || password === '') {
         alert('Не всі поля були заповнені')
+    } else {
+        console.log(result);
+        event.target.reset();
     }
-
-    console.log(result);
-    event.target.reset();
 }
-
